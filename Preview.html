@@ -1,0 +1,80 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Preview</title>
+    <style>
+      @font-face {
+        font-family: 'Figtree';
+        src: url('./assets/fonts/Figtree-VariableFont_wght.ttf');
+      }
+
+      body {
+        font-family: Figtree;
+        display: flex;
+        justify-content: center;
+        background-color: #f5d04e;
+      } 
+     .card {
+       margin: auto;
+       border-color: black;
+       border-style: solid;
+       border-radius: 1rem;
+       padding: 1rem;
+       width: 50%;
+       box-shadow: 1rem 1rem;
+       background-color: white;
+     }
+
+     .tag {
+       font-weight: 1000;
+       background-color: #f5d04e;
+       width:fit-content;
+       border-radius: .25rem;
+     }
+
+     .tag-text {
+       padding: .5rem;
+     }
+     .title {
+       font-weight: bold;
+     }
+
+     .author {
+       margin-top: 2rem;
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+     }
+     .avatar {
+       border-radius: 50%;
+       width: 15%;
+       margin-right: 1rem;
+     }
+     .thumbnail {
+       height: 10rem;
+       object-fit: cover;
+     }
+
+     .preview {
+       color: gray;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <img class="thumbnail" src="./assets/images/illustration-article.svg" alt="lovely image" width="100%" />
+      <div class="tag">
+        <p class="tag-text">Learning</p>
+      </div>
+      <p>Published in 21 Dec 2023</p>
+      <h2 class="title">HTML & CSS foundations</h2>
+      <p class="preview">These languages are the backbone of every website, defining structure, content and presentation</p>
+      <div class="author">
+        <img class="avatar" src="./assets/images/image-avatar.webp" alt="lovely me" width="100%" />
+        <p class="author-name">Greg Hooper </p>
+      </div>
+    </div>
+  </body>
+</html>
